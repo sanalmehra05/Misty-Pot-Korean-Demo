@@ -1,4 +1,5 @@
 @import url('https://db.onlinewebfonts.com/c/455b960b235b7b4a4e08589d451d9c65?family=Futura+Bold+Outline');
+@import url('https://fonts.cdnfonts.com/css/cooper-black');
 
 :root {
     --bg-color: #FDF8E6;
@@ -34,7 +35,7 @@ h1,
 h2,
 h3,
 .retro-font {
-    font-family: 'Cooper Black', cursive, serif;
+    font-family: 'Cooper Black', 'Brik', 'Impact', 'Arial Black', serif;
     color: var(--primary-blue);
     text-transform: uppercase;
 }
