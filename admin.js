@@ -91,4 +91,40 @@ document.addEventListener('DOMContentLoaded', () => {
             // Mock file upload logic here
         });
     });
+
+    // 5. Mobile Sidebar Toggle
+    const adminMenuBtn = document.getElementById('admin-menu-btn');
+    const sidebar = document.querySelector('.sidebar');
+
+    if (adminMenuBtn && sidebar) {
+        adminMenuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            // Animate hamburger to X
+            adminMenuBtn.classList.toggle('active');
+            const spans = adminMenuBtn.querySelectorAll('span');
+            if (adminMenuBtn.classList.contains('active')) {
+                spans[0].style.transform = 'translateY(10px) rotate(45deg)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'translateY(-10px) rotate(-45deg)';
+            } else {
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            }
+        });
+
+        // Close sidebar on link click (mobile)
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 900) {
+                    sidebar.classList.remove('open');
+                    adminMenuBtn.classList.remove('active');
+                    const spans = adminMenuBtn.querySelectorAll('span');
+                    spans[0].style.transform = 'none';
+                    spans[1].style.opacity = '1';
+                    spans[2].style.transform = 'none';
+                }
+            });
+        });
+    }
 });
