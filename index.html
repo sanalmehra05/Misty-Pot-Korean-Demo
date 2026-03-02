@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misty Pot Korean Grill Cafe & Bar | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Cooper Black';
+            src: url('https://fonts.cdnfonts.com/s/14878/CooperBlack.woff') format('woff');
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Shared Header -->
+    <nav class="sticky-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="Misty Pot Logo" class="logo-img">
+                <span class="brand-font" style="font-size: 1.5rem;">Misty Pot</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div id="cart-icon" class="cart-trigger">
+                    <span class="cart-count">0</span>
+                    🛒
+                </div>
+                <a href="contact.html" class="btn btn-book">Book a Table</a>
+                <div class="mobile-menu-toggle" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Hero Section -->
+    <section class="hero-full">
+        <div class="container hero-content-v3">
+            <h1 class="brand-font offset-shadow" style="font-size: 5rem; color: white;">Misty Pot</h1>
+            <p class="arch-text-modern">Korean Grill Cafe & Bar</p>
+            <p class="hero-tagline">Authentic Korean Flavors, Modern Comfort</p>
+            <div class="hero-cta-group">
+                <a href="menu.html" class="btn btn-book">View Menu</a>
+                <a href="contact.html" class="btn btn-secondary">Reserve Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Overview -->
+    <main class="container page-section">
+        <div class="modern-intro-grid">
+            <div class="intro-text">
+                <h2 class="retro-font" style="font-size: 2.5rem; margin-bottom: 20px;">Welcome to Melbourne's Best
+                    Korean Grill</h2>
+                <p>Misty Pot blends the nostalgic energy of the 70s and 80s "Newtro" aesthetic with the professional
+                    precision of modern Korean cuisine. From our signature Rice Bowls to the premium Hot Pot for Share,
+                    every dish is a celebration of flavor.</p>
+                <div style="margin-top: 30px;">
+                    <a href="about.html" class="btn btn-book">Our Story</a>
+                </div>
+            </div>
+            <div class="intro-image card">
+                <img src="assets/la_galbi.png" alt="Special Dish" style="width: 100%; border-radius: 12px;">
+                <div class="badge-retro">SPEC- IAL</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Featured Section -->
+    <section class="checker-pattern-purple" style="padding: 100px 0;">
+        <div class="container" style="text-align: center;">
+            <div class="title-block-retro">
+                <h2 class="retro-font">Featured Specials</h2>
+            </div>
+            <div class="menu-grid">
+                <div class="card">
+                    <img src="assets/hot_pot.png" alt="Hot Pot"
+                        style="width: 100%; margin-bottom: 15px; border-radius: 12px;">
+                    <h3>Hot Pot for Share</h3>
+                    <p>Authentic beef bulgogi and mushroom hot pot perfect for 2-3 serves.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/la_galbi.png" alt="LA Galbi"
+                        style="width: 100%; margin-bottom: 15px; border-radius: 12px;">
+                    <h3>Premium LA Galbi</h3>
+                    <p>High-end grilled beef short ribs with our signature marinade.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="specials.html" class="btn btn-book"
+                    style="background: white; color: var(--accent-purple); border-color: white;">View All Specials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2 class="retro-font">Your Order</h2>
+            <button id="close-cart" class="close-btn">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items-container">
+            <p style="text-align: center; padding: 20px;">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">$0.00</span>
+            </div>
+            <button class="btn btn-secondary checkout-btn" style="width: 100%;">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Shared Footer -->
+    <footer class="grid-pattern-blue">
+        <div class="container">
+            <h2 class="retro-font">Misty Pot</h2>
+            <p>Korean Grill Cafe & Bar | Melbourne</p>
+            <div style="margin: 20px 0; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px;">
+                <p>500 Lonsdale St, Melbourne VIC 3000</p>
+                <p>Email: hello@mistypot.com.au | Tel: (03) 9876 5432</p>
+            </div>
+            <p class="copyright">&copy; 2026 Misty Pot Korean. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

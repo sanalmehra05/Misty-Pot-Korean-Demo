@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online | Misty Pot Korean Grill</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Cooper Black';
+            src: url('https://fonts.cdnfonts.com/s/14878/CooperBlack.woff') format('woff');
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Shared Header -->
+    <nav class="sticky-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="Misty Pot Logo" class="logo-img">
+                <span class="brand-font" style="font-size: 1.5rem;">Misty Pot</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div id="cart-icon" class="cart-trigger">
+                    <span class="cart-count">0</span>
+                    🛒
+                </div>
+                <a href="contact.html" class="btn btn-book">Book a Table</a>
+                <div class="mobile-menu-toggle" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-section container flush-nav" style="text-align: center;">
+        <div class="title-block-retro">
+            <h1 class="retro-font">Order Online</h1>
+        </div>
+
+        <div class="order-layout">
+            <div class="order-categories">
+                <button class="cat-btn active" data-category="all">All Items</button>
+                <button class="cat-btn" data-category="rice">Rice Bowls</button>
+                <button class="cat-btn" data-category="chicken">Fried Chicken & Katsu</button>
+                <button class="cat-btn" data-category="soup">Soup & Hot Pot</button>
+                <button class="cat-btn" data-category="mains">Main & Grill</button>
+                <button class="cat-btn" data-category="starters">Small Bites</button>
+                <button class="cat-btn" data-category="bibimbap">Bibimbap</button>
+                <button class="cat-btn" data-category="drinks">Drinks</button>
+            </div>
+
+            <div class="menu-grid" id="order-menu">
+                <!-- RICE BOWLS -->
+                <div class="card order-card" data-category="rice" data-id="rice-1">
+                    <div class="badge-retro">HOT</div>
+                    <h3>Beef Bulgogi Rice Bowl</h3>
+                    <p class="ko-text">버섯불고기덮밥</p>
+                    <span class="price-tag">21.0</span>
+                    <button class="btn btn-book add-first-btn" data-name="Beef Bulgogi Rice Bowl"
+                        data-price="21.0">+</button>
+                    <div class="qty-controls" data-id="rice-1">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="card order-card" data-category="rice" data-id="rice-2">
+                    <div class="badge-retro">🌶️</div>
+                    <h3>Charcoal Pork Bowl</h3>
+                    <p class="ko-text">석쇠돼지불고기덮밥</p>
+                    <span class="price-tag">21.0</span>
+                    <button class="btn btn-book add-first-btn" data-name="Charcoal Pork Bowl"
+                        data-price="21.0">+</button>
+                    <div class="qty-controls" data-id="rice-2">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="card order-card" data-category="rice" data-id="rice-3"
+                    data-options='{"Extra Options": [{"name": "Extra Rice", "price": 2}, {"name": "Extra Meat", "price": 5}]}'>
+                    <div class="badge-retro">🌶️🌶️ pesca</div>
+                    <h3>Spicy Baby Octopus Rice Bowl</h3>
+                    <p class="ko-text">불맛쭈꾸미덮밥</p>
+                    <span class="price-tag">23.5</span>
+                    <button class="btn btn-book add-first-btn" data-name="Spicy Baby Octopus Rice Bowl"
+                        data-price="23.5">+</button>
+                    <div class="qty-controls" data-id="rice-3">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="card order-card" data-category="rice" data-id="rice-4"
+                    data-options='{"Choose Sauce": [{"name": "Original", "price": 0}, {"name": "Creamy Spicy", "price": 1}, {"name": "Sweet Soy", "price": 1}]}'>
+                    <div class="badge-retro">NEW</div>
+                    <h3>Korean Fried Chicken Rice Bowl</h3>
+                    <p class="ko-text">순살 후라이드 치킨덮밥</p>
+                    <span class="price-tag">22.0</span>
+                    <button class="btn btn-book add-first-btn" data-name="Korean Fried Chicken Rice Bowl"
+                        data-price="22.0">+</button>
+                    <div class="qty-controls" data-id="rice-4">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <!-- FRIED CHICKEN & KATSU -->
+                <div class="card order-card" data-category="chicken" data-id="chicken-1">
+                    <h3>Jumbo Pork Katsu</h3>
+                    <p class="ko-text">왕돈가스</p>
+                    <span class="price-tag">26.0</span>
+                    <button class="btn btn-book add-first-btn" data-name="Jumbo Pork Katsu" data-price="26.0">+</button>
+                    <div class="qty-controls" data-id="chicken-1">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="card order-card" data-category="chicken" data-id="chicken-2"
+                    data-options='{"Add Extra": [{"name": "Curry Sauce", "price": 3}]}'>
+                    <h3>Chicken Katsu</h3>
+                    <p class="ko-text">치킨가스</p>
+                    <span class="price-tag">22.0</span>
+                    <button class="btn btn-book add-first-btn" data-name="Chicken Katsu" data-price="22.0">+</button>
+                    <div class="qty-controls" data-id="chicken-2">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="card order-card" data-category="chicken" data-id="chicken-3"
+                    data-options='{"Choose Sauce": [{"name": "Creamy Spicy", "price": 0}, {"name": "Sweet Soy & Garlic", "price": 0}, {"name": "Volcano (Spicy)", "price": 1}, {"name": "Snow Cheese", "price": 2}]}'>
+                    <div class="badge-retro">POPULAR</div>
+                    <h3>Korean Fried Chicken & Chips</h3>
+                    <p class="ko-text">순살치킨 & 감자튀김</p>
+                    <span class="price-tag">26.0</span>
+                    <button class="btn btn-book add-first-btn" data-name="Korean Fried Chicken & Chips"
+                        data-price="26.0">+</button>
+                    <div class="qty-controls" data-id="chicken-3">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <!-- SOUP & HOT POT -->
+                <div class="card order-card" data-category="soup" data-id="soup-1">
+                    <h3>Yukgaejang (Spicy Beef Soup)</h3>
+                    <p class="ko-text">육개장</p>
+                    <span class="price-tag">22.0</span>
+                    <button class="btn btn-book add-first-btn" data-name="Yukgaejang" data-price="22.0">+</button>
+                    <div class="qty-controls" data-id="soup-1">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="card order-card" data-category="soup" data-id="soup-2"
+                    data-options='{"Extras": [{"name": "Boiled Egg", "price": 2}, {"name": "Fried Seaweed", "price": 3}, {"name": "Extra Cheese", "price": 3}]}'>
+                    <div class="badge-retro">HOT</div>
+                    <h3>Tteokbokki</h3>
+                    <p class="ko-text">떡볶이</p>
+                    <span class="price-tag">25.5</span>
+                    <button class="btn btn-book add-first-btn" data-name="Tteokbokki" data-price="25.5">+</button>
+                    <div class="qty-controls" data-id="soup-2">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="card order-card" data-category="soup" data-id="soup-3">
+                    <div class="badge-retro">FOR SHARE</div>
+                    <h3>Hot Pot for Share</h3>
+                    <p class="ko-text">버섯불고기전골</p>
+                    <span class="price-tag">64.0</span>
+                    <button class="btn btn-book add-first-btn" data-name="Hot Pot for Share"
+                        data-price="64.0">+</button>
+                    <div class="qty-controls" data-id="soup-3">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <!-- BIBIMBAP -->
+                <div class="card order-card" data-category="bibimbap" data-id="bibim-1"
+                    data-options='{"Extras": [{"name": "Extra Sauce", "price": 1}, {"name": "Fried Eye Egg", "price": 2}]}'>
+                    <h3>Beef Bulgogi Bibimbap</h3>
+                    <p class="ko-text">소불고기 비빔밥</p>
+                    <span class="price-tag">22.0</span>
+                    <button class="btn btn-book add-first-btn" data-name="Beef Bulgogi Bibimbap"
+                        data-price="22.0">+</button>
+                    <div class="qty-controls" data-id="bibim-1">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="card order-card" data-category="bibimbap" data-id="bibim-2"
+                    data-options='{"Extras": [{"name": "Extra Sauce", "price": 1}, {"name": "Fried Eye Egg", "price": 2}]}'>
+                    <h3>Mushroom & Tofu Bibimbap</h3>
+                    <p class="ko-text">버섯두부 비빔밥</p>
+                    <span class="price-tag">21.0</span>
+                    <button class="btn btn-book add-first-btn" data-name="Mushroom & Tofu Bibimbap"
+                        data-price="21.0">+</button>
+                    <div class="qty-controls" data-id="bibim-2">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <!-- SMALL BITES -->
+                <div class="card order-card" data-category="starters" data-id="start-1">
+                    <h3>Seafood Pancake</h3>
+                    <p class="ko-text">해물파전</p>
+                    <span class="price-tag">26.0</span>
+                    <button class="btn btn-book add-first-btn" data-name="Seafood Pancake" data-price="26.0">+</button>
+                    <div class="qty-controls" data-id="start-1">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="card order-card" data-category="starters" data-id="start-2"
+                    data-options='{"Extras": [{"name": "Salad", "price": 3}, {"name": "Noodles", "price": 4}]}'>
+                    <h3>Deep Fried Dumplings</h3>
+                    <p class="ko-text">군만두</p>
+                    <span class="price-tag">12.0</span>
+                    <button class="btn btn-book add-first-btn" data-name="Deep Fried Dumplings"
+                        data-price="12.0">+</button>
+                    <div class="qty-controls" data-id="start-2">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <!-- DRINKS -->
+                <div class="card order-card" data-category="drinks" data-id="drink-1">
+                    <h3>Espresso Martini</h3>
+                    <span class="price-tag">14.5</span>
+                    <button class="btn btn-book add-first-btn" data-name="Espresso Martini" data-price="14.5">+</button>
+                    <div class="qty-controls" data-id="drink-1">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="card order-card" data-category="drinks" data-id="drink-2">
+                    <h3>Blossom Highball</h3>
+                    <span class="price-tag">16.0</span>
+                    <button class="btn btn-book add-first-btn" data-name="Blossom Highball" data-price="16.0">+</button>
+                    <div class="qty-controls" data-id="drink-2">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="card order-card" data-category="drinks" data-id="drink-3">
+                    <div class="badge-retro">VALUE</div>
+                    <h3>So-Maek Set</h3>
+                    <p class="ko-text">소맥 세트</p>
+                    <span class="price-tag">25.0</span>
+                    <button class="btn btn-book add-first-btn" data-name="So-Maek Set" data-price="25.0">+</button>
+                    <div class="qty-controls" data-id="drink-3">
+                        <button class="qty-btn minus">-</button>
+                        <span class="item-qty">0</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Customization Modal -->
+    <div id="customize-modal" class="modal">
+        <div class="modal-content">
+            <h2 class="retro-font" id="modal-item-name">Customize Item</h2>
+            <div id="modal-options-container">
+                <!-- Options injected here -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancel-customize">Cancel</button>
+                <button class="btn btn-book" id="confirm-customize">Add to Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2 class="retro-font">Your Order</h2>
+            <button id="close-cart" class="close-btn">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items-container">
+            <p style="text-align: center; padding: 20px;">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">$0.00</span>
+            </div>
+            <button class="btn btn-secondary checkout-btn" style="width: 100%;">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Shared Footer -->
+    <footer class="grid-pattern-blue">
+        <div class="container">
+            <h2 class="retro-font">Misty Pot</h2>
+            <p>Korean Grill Cafe & Bar | Melbourne</p>
+            <p class="copyright">&copy; 2026 Misty Pot Korean. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
